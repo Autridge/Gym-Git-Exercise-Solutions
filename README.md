@@ -38,3 +38,16 @@ git branch -d test
     git stash pop
     git reset --hard
 ```
+
+## Bundle 2
+
+### Exercise 1
+
+```bash
+    git checkout -b ft/bundle
+    touch services.html
+    git add services.html
+    git commit -m "Adding the services page"
+    git push -u origin ft/bundle-2
+    https://github.com/Autridge/git-exercise/pull/new/ft/bundle-2
+```
