@@ -77,3 +77,46 @@ git branch -d test
     git commit -m "Resolved Issue"
     git push
 ```
+
+## Bundle 3
+
+### Exercise 1
+
+```bash
+    git checkout -b ft/team-page
+    touch team.html
+    git add team.html
+    git commit -m "Add team.html page with initial content"
+    git push -u origin ft/team-page
+    git checkout main
+    git checkout -b ft/contact-page
+    git checkout ft/team-page
+    git log --oneline -1
+    git cherry-pick f3f2138
+    touch contact.html
+    git add contact.html
+    git commit -m "Added contact.html page with initial content"
+    git push -u origin ft/contact-page
+    git checkout -b ft/faq-page
+    touch faq.html
+    git add faq.html
+    git commit -m "Added faq.html with initial content"
+    git psuh -u origin ft/faq-page
+    git revert f3f2138 --no-edit
+    git push origin ft/faq-page
+```
+
+### Exercise 2
+
+```bash
+    git checkout -b ft/home-page-redesign
+    git checkout main
+    git add index.html
+    git commit -m "Update homepage with new design"
+    git push origin main
+    git checkout ft/home-page-redesign
+    git rebase main
+    git add index.html
+    git commit -m "Redesign homepage with modern layout and features"
+    git push -u origin ft/home-page-redesign
+```
